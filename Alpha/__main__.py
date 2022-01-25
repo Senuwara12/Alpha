@@ -54,17 +54,17 @@ from Avatar import (
     updater,
 )
 
-from Avatar.modules import ALL_MODULES
-from Avatar.modules.helper_funcs.alternate import typing_action
-from Avatar.modules.helper_funcs.chat_status import is_user_admin
-from Avatar.modules.helper_funcs.misc import paginate_modules
-from Avatar.modules.helper_funcs.readable_time import get_readable_time
+from Alpha.modules import ALL_MODULES
+from Aalpha.modules.helper_funcs.alternate import typing_action
+from Alpha.modules.helper_funcs.chat_status import is_user_admin
+from Alpha.modules.helper_funcs.misc import paginate_modules
+from Aalpha.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-*Hi, my name is* [Avatar](https://telegra.ph/file/430a51d113196c7c7fa06.jpg) !
+*Hi, my name is* [Alpha](https://telegra.ph/file/430a51d113196c7c7fa06.jpg) !
 I am a Powerful Group Manager bot Developed by [ImDilasna](@ImDilasna)
 You can find my list of available commands with /help.
-©2021 []() Bot All Rights Reserved
+©2022 []() Bot All Rights Reserved
 """
 
 HELP_STRINGS = f"""
@@ -132,7 +132,7 @@ USER_SETTINGS = {}
 GDPR = []
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("Avatar.modules." + module_name)
+    imported_module = importlib.import_module("Aalpha.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -301,7 +301,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "*｢ Help for Avatar {} Module 」*\n".format(
+                "*｢ Help for Alpha {} Module 」*\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -364,8 +364,8 @@ def DewmiBot_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"👋 Hi again!  The name's {dispatcher.bot.first_name} is a Powerful BOT to Make Your Groups Secured and Organized Developed by [ImDilasna](https://t.me/ImDilasna)"
-            f"\n\n✍️ Join [SL Tech Zone](https://t.me/sltechzone) To Keep Yourself Updated About {dispatcher.bot.first_name}"
+            text=f"👋 Hi again!  The name's {dispatcher.bot.first_name} is a Powerful BOT to Make Your Groups Secured and Organized Developed by [Nethmal100](https://t.me/Nethmal100)"
+            f"\n\n✍️ Join [SL Tech Zone](https://t.me/TEAM_NBOT_GROUOP) To Keep Yourself Updated About {dispatcher.bot.first_name}"
             f"\n\n💪 I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\n👊 I Can Manage Your Groups Smoothly, With Some Special Features."
             f"\n\n[👇](https://telegra.ph/file/87d64c152b9becb9f87f1.jpg) You Can Know More About Me By Clicking The Below Buttons.",
@@ -402,7 +402,7 @@ def DewmiBot_about_callback(update, context):
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
             f"\n\n👉 If You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\n👉 You Can get support {dispatcher.bot.first_name} by joining (https://t.me/SlNinjaTeam).\n"
+            f"\n\n👉 You Can get support {dispatcher.bot.first_name} by joining (https://t.me/TEAM_NBOT_GROUOP).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -423,7 +423,7 @@ def DewmiBot_about_callback(update, context):
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
             text=f"*{dispatcher.bot.first_name} Is the redisigned version of SenkuRobot for the best performance.*"
-            f"\n\n{dispatcher.bot.first_name}'s source code was Devoloped By [Dilasna](https://t.me/ImDilasna)"
+            f"\n\n{dispatcher.bot.first_name}'s source code was Devoloped By [Nethmal](https://t.me/Nethmal100)"
             f"\n\nIf Any Question About {dispatcher.bot.first_name}, Let Us Know At @{SUPPORT_CHAT}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,

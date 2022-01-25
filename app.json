@@ -1,11 +1,11 @@
 {
       "name": "Telegram-Group-Management-Bot-Alpha",
-      "description": "A Powerful BOT to Make Your Groups Secured and Organized.",
+      "description": "A Powerful BOT to Make Your Groups Secured and Organized best bot .",
 	  "logo": "https://telegra.ph/file/453e68ce3660faf6c82fc.jpg",
       "keywords": [
          "Telegram",
          "Groupmanage",
-         "Telegram-Group-Management-Bot-DewmiBot"
+         "Telegram-Group-Management-Bot-alpha "
       ],   
    "repository": "https://github.com/neth1841/Alpha",
    "addons": [
@@ -26,7 +26,7 @@
   ],      
    "env": {
       "TOKEN": {
-         "description": "Your bot token. Get one from @BotFather duh",
+         "description": "Your bot token. Get one from @BotFather get get ",
          "required": true,
          "value": ""
       },
